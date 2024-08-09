@@ -1,15 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 import image from '../assets/loginImg.png';
-// const Login = () => {
-//   return (
-//     <div>
-//       <h1>Login Page</h1>
-//       <p>Please login to continue.</p>
-//       <h1>Login Page</h1>
-//     </div>
-//   );
-// };
+
 const Login = () => {
     const [email, setEmail] = useState(''); // email 사용
     const [password, setPassword] = useState('');
@@ -82,33 +74,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
-
-// const Login = () => {
-//     return (
-//         <div className="login-container">
-//             <div className="login-box">
-//                 <div className="left">
-//                     <h1>샬레코리아</h1>
-//                     <p>여행을 DESIGN하다.</p>
-//                     <form>
-//                         <div className="input-group">
-//                             <label htmlFor="username">아이디</label>
-//                             <input type="text" id="username" name="username" />
-//                         </div>
-//                         <div className="input-group">
-//                             <label htmlFor="password">비밀번호</label>
-//                             <input type="password" id="password" name="password" />
-//                         </div>
-//                         <a href="/forgot-password" className="forgot-password">비밀번호를 잊으셨나요?</a>
-//                         <button type="submit" className="login-button">로그인</button>
-//                     </form>
-//                 </div>
-//                 <div className="right">
-//                     <img src={image} alt="Chalet Korea" />
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
